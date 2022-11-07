@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function openbook {
+    chosen=$(ls -1 ~/media/books | dmenu -i -l 20 -p 'Choose an option:' -fn 'JetBrainsMono Nerd Font:style:medium:size=10' -nb '#222222' -nf '#bbbbbb' -sb '#7A86B6' -sf '#eeeeee')
+    [ -z "$chosen" ] && exit
+    zathura "~/media/books/$chosen"
+  }
+
+openbook
