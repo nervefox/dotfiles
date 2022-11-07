@@ -2,7 +2,7 @@
 
 The Dotfiles I use for daily driving! These are focused to be very minimal. I don't use gaps nor any compositor. 
 
-![alt text](https://i.imgur.com/Idz9dzB.png)
+![alt text](https://i.imgur.com/0UnwRb6.png)
 
 ## Programs
 
