@@ -1,6 +1,3 @@
-# Status bar
-dwmblocks &
-
 # Make keyboard cursor go faster 
 xset r rate 210 40
 
