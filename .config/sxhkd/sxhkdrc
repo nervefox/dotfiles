@@ -13,6 +13,9 @@ super + BackSpace
 Print
     scrot -s -z --line mode=edge ~/pictures/screenshots/%d-%m-%Y-%T-screenshot.png -e 'xclip -selection clipboard -t image/png -i $f'
 
+super + b
+    dmenudoc
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

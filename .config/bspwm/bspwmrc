@@ -50,3 +50,6 @@ bspc config single_monocle       false
 
 #### BSPWM COLORING ####
 bspc config focused_border_color             "#51547d" 
+
+#### RULES ####
+bspc rule -a Zathura state=tiled
