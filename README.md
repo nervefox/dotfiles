@@ -1,6 +1,6 @@
 # Dotfiles
 
-The Dotfiles I use for daily driving! These are focused to be very minimal. I don't use gaps nor any compositor. 
+The Dotfiles I use for daily driving! These are focused to be very minimal. I don't any compositor. 
 
 ![alt text](https://i.imgur.com/ShXlLsY.png)
 
