@@ -15,7 +15,7 @@ xset r rate 210 40
 /home/caioc/.config/polybar/launch_polybar.sh &
 
 # Monitor config
-xrandr --output DP-0 --mode 1920x1080 --left-of HDMI-0 --mode 1920x1080
+xrandr --output DP-0 --mode 1920x1080 --rate 165.00
 
 # Disable screen saving
 xset s off
@@ -26,6 +26,7 @@ xset s noblank
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
+export QT_STYLE_OVERRIDE=kvantum
 
 # Polkit agent
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -38,7 +39,7 @@ setxkbmap -layout us,us -variant intl, -option grp:alt_shift_toggle
 
 #### MONITORS ####
 bspc monitor DP-0 -d 1 2 3 4 
-bspc monitor HDMI-0 -d 5 6 7 8
+#bspc monitor HDMI-0 -d 5 6 7 8
 
 #### BSPWM CONFIGURATION ####
 bspc config border_width         2
