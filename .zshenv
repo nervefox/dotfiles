@@ -15,3 +15,6 @@ export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export PYTHONHISTFILE=-
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+
+export GTK_IM_MODULE=xim
+export QT_QPA_PLATFORMTHEME=qt5ct

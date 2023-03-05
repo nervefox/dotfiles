@@ -5,7 +5,7 @@ super + Return
         alacritty	
 
 super + @space
-	dmenu_run -fn 'JetBrainsMono Nerd Font:style:medium:size=10' -sb "#51547d" -nb "#1c1b22"
+	dmenu_run -fn 'JetBrainsMono Nerd Font:style:medium:size=10' -sb "#1E3888" -nb "#1c1b22"
 
 super + BackSpace
     dmenupower
@@ -17,7 +17,7 @@ super + b
     dmenudoc
 
 super + e
-    thunar
+    dolphin
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -79,8 +79,8 @@ super + {_,shift + }{h,j,k,l}
 #	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-#super + bracket{left,right}
-#	bspc desktop -f {prev,next}.local
+super + button{8,9}
+	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
