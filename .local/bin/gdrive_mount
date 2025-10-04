@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while ! ping -c 4 google.com > /dev/null; 
+do
+  sleep 1 
+done
+
+MOUNT_POINT="$HOME/gdrive"
+
+/usr/bin/rclone mount gdrive: "$MOUNT_POINT" --vfs-cache-mode=full &
+
+exit 0

@@ -39,7 +39,7 @@ alias ll='ls -l --group-directories-first'
 
 # misc
 alias grep='grep --color=auto'
-alias vim ='nvim'
+alias vim='nvim'
 
 ### Make programs use XDG directiores for dotfiles ###
 export HISTFILE="$XDG_STATE_HOME"/bash/history
