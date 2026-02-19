@@ -11,7 +11,7 @@ PS1='[\u@\h \W]\$ '
 # Function for going up X directories (ex: up 2, up 4, etc)
 up() { cd $(eval printf '../'%.0s {1..$1}); }
 
-### History settings ###
+### History settings
 
 # Set ignoredups and ignorespace
 export HISTCONTROL=ignoreboth
@@ -19,13 +19,13 @@ export HISTCONTROL=ignoreboth
 # Appent to history file instead of overwriting
 shopt -s histappend
 
-### Set XDG user directories variables ###
+### Set XDG user directories variables
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
-### Aliases ###
+### Aliases
 
 # Adds confirmation before overwriting files
 alias rm='rm -i'
@@ -41,7 +41,7 @@ alias ll='ls -l --group-directories-first'
 alias grep='grep --color=auto'
 alias vim='nvim'
 
-### Make programs use XDG directiores for dotfiles ###
+### Make programs use XDG directiores for dotfiles
 export HISTFILE="$XDG_STATE_HOME"/bash/history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
