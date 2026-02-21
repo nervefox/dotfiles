@@ -11,6 +11,9 @@ PS1='[\u@\h \W]\$ '
 # Function for going up X directories (ex: up 2, up 4, etc)
 up() { cd $(eval printf '../'%.0s {1..$1}); }
 
+# Add .local/bin to path
+export PATH="$PATH:/home/caioc/.local/bin"
+
 ### History settings
 
 # Set ignoredups and ignorespace
@@ -45,3 +48,5 @@ alias vim='nvim'
 export HISTFILE="$XDG_STATE_HOME"/bash/history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
+# Created by `pipx` on 2026-02-21 17:41:15
