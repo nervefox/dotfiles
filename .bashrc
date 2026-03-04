@@ -49,4 +49,4 @@ export HISTFILE="$XDG_STATE_HOME"/bash/history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
-# Created by `pipx` on 2026-02-21 17:41:15
+alias wget='wget --hsts-file="$XDG_STATE_HOME/wget-hsts"'
